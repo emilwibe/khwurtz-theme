@@ -1,0 +1,30 @@
+.header.primary {
+    height: var( --header-height );
+}
+.block {
+    max-width: 100vw;
+}
+@media screen and ( min-width: 680px )
+and (orientation: landscape) {
+    .block {
+        display: inline-block;
+        height: calc( 100vh - var( --header-height ) );
+        /* padding: var( --l-global-padding ); */
+    }
+    /* BLOCK MODULE M */
+    .m-1-3 {
+        width: 33%;
+    }
+    .m-2-3 {
+        width: 66%;
+    }
+}
+@media screen and ( max-width: 1024px )
+and (orientation: portrait) {
+    .home .block .inner .content {
+        height: 56.25vw;
+    }
+    .single-post .block {
+        margin-bottom: var( --l-global-padding );
+    }
+}

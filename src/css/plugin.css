@@ -1,0 +1,6 @@
+/**
+* for scrollReavealJS
+*/
+html.sr .load-hidden {
+    visibility: hidden;
+}
